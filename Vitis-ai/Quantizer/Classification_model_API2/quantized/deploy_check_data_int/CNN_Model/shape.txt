@@ -1,0 +1,12 @@
+(1, 128, 480, 3): CNN_Model::input_0
+(1, 126, 478, 25): CNN_Model::CNN_Model/ReLU[relu1]/25
+(1, 63, 239, 25): CNN_Model::CNN_Model/MaxPool2d[maxpool1]/input.3
+(1, 58, 234, 32): CNN_Model::CNN_Model/ReLU[relu2]/42
+(1, 29, 117, 32): CNN_Model::CNN_Model/MaxPool2d[maxpool2]/input.5
+(1, 26, 114, 32): CNN_Model::CNN_Model/ReLU[relu3]/59
+(1, 13, 57, 32): CNN_Model::CNN_Model/MaxPool2d[maxpool3]/input.7
+(1, 12, 56, 32): CNN_Model::CNN_Model/ReLU[relu4]/76
+(1, 6, 28, 32): CNN_Model::CNN_Model/MaxPool2d[maxpool4]/82
+(1, 1024): CNN_Model::CNN_Model/Linear[fc1]/input.10
+(1, 32): CNN_Model::CNN_Model/Linear[fc2]/input
+(1, 4): CNN_Model::CNN_Model/Linear[fc3]/99

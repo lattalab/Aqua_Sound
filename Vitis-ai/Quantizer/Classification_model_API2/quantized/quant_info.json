@@ -1,0 +1,38 @@
+{
+  "param":
+  {
+    "CNN_Model::cnn1.weight":[8,9],
+    "CNN_Model::cnn1.bias":[8,9],
+    "CNN_Model::cnn2.weight":[8,10],
+    "CNN_Model::cnn2.bias":[8,11],
+    "CNN_Model::cnn3.weight":[8,10],
+    "CNN_Model::cnn3.bias":[8,10],
+    "CNN_Model::cnn4.weight":[8,9],
+    "CNN_Model::cnn4.bias":[8,9],
+    "CNN_Model::fc1.weight":[8,10],
+    "CNN_Model::fc1.bias":[8,11],
+    "CNN_Model::fc2.weight":[8,9],
+    "CNN_Model::fc2.bias":[8,11],
+    "CNN_Model::fc3.weight":[8,9],
+    "CNN_Model::fc3.bias":[8,11]
+  },
+  "output":
+  {
+    "CNN_Model::input_0":[8,6],
+    "CNN_Model::CNN_Model/ReLU[relu1]/25":[8,7],
+    "CNN_Model::CNN_Model/MaxPool2d[maxpool1]/input.3":[8,7],
+    "CNN_Model::CNN_Model/ReLU[relu2]/42":[8,5],
+    "CNN_Model::CNN_Model/MaxPool2d[maxpool2]/input.5":[8,5],
+    "CNN_Model::CNN_Model/ReLU[relu3]/59":[8,5],
+    "CNN_Model::CNN_Model/MaxPool2d[maxpool3]/input.7":[8,5],
+    "CNN_Model::CNN_Model/ReLU[relu4]/76":[8,8],
+    "CNN_Model::CNN_Model/MaxPool2d[maxpool4]/82":[8,8],
+    "CNN_Model::CNN_Model/Linear[fc1]/input.10":[8,5],
+    "CNN_Model::CNN_Model/Linear[fc2]/input":[8,2],
+    "CNN_Model::CNN_Model/Linear[fc3]/99":[8,0]
+  },
+  "input":
+  {
+
+  }
+}
