@@ -25,13 +25,13 @@ HOP_LEN = 512    # non-overlap region, which means 1/4 portion overlapping
 FMAX = SAMPLE_RATE//2   # max frequency
 
 # Create a directory to store the spectrogram images
-destination_folder = "fish+whale"
-source_folder = "./合併聲音/魚+鯨魚"
+source_folder = "../../MultLabel_model/合併聲音/魚+鯨魚"
+destination_folder = "../../聲音資料/Merge_without_denoise/fish+whale"
 
 def process_audio_file(filepath):
     start_time = time.time()    # 計時
     audio, sr = librosa.load(filepath, sr=SAMPLE_RATE)  # 讀取音檔
-    audio = nr.reduce_noise(y=audio, sr=SAMPLE_RATE)    # Denoise the audio
+    #audio = nr.reduce_noise(y=audio, sr=SAMPLE_RATE)    # Denoise the audio
 
     # Generate the mel spectrogram
     spec = librosa.feature.melspectrogram(y=audio, sr=SAMPLE_RATE, fmax=FMAX, n_mels=N_MELS, hop_length=HOP_LEN, n_fft=N_FFT)
