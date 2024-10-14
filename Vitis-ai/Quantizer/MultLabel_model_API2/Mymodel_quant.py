@@ -162,10 +162,10 @@ def main():
     ap.add_argument('--quantize',  type=bool, default=True, help='Whether to do quantization, default is True')
     ap.add_argument('--quantize_output_dir',  type=str, default='./quantized/', help='Directory to save the quantized model')
     ap.add_argument('--finetune',  type=bool, default=True, help='Whether to do the finetune befroe quantization')
-    ap.add_argument('--deploy',  type=bool, default=False, help='Whether to export xmodel for deployment')
-    ap.add_argument('--train_dataset_path',  type=str, default='./dataset_v2/train', help='Give the train dataset path')
+    ap.add_argument('--deploy',  type=bool, default=True, help='Whether to export xmodel for deployment')
+    ap.add_argument('--train_dataset_path',  type=str, default='./dataset_v3/train', help='Give the train dataset path')
     # use test data as validation here
-    ap.add_argument('--val_dataset_path',  type=str, default='./dataset_v2/test')
+    ap.add_argument('--val_dataset_path',  type=str, default='./dataset_v3/test')
     args = ap.parse_args()
 
     print('\n----------------------------------------')
