@@ -12,13 +12,13 @@ import torchvision.datasets as dset
 from torch.utils.data import DataLoader
 from CNN_classification import CNN_Model
 
-LR = 0.002
+LR = 0.0005
 #batch_size_train = 20
 #batch_size_valid = 20
 
 NUM_EPOCHS = 20
 
-IMAGE_SIZE = (128, 480)
+IMAGE_SIZE = (480, 256)
 transform = transforms.Compose([
         transforms.Resize( IMAGE_SIZE ), 
         transforms.ToTensor()
@@ -83,7 +83,7 @@ def quantize(model, quantized_model_name, quant_mode, batchsize, quantize_output
     
     
     # Generate a random input tensor for quantization
-    rand_in = torch.randn([batchsize, 3, 128, 480])
+    rand_in = torch.randn([batchsize, 3, 480, 256])
 
     # Create quantizer
     quantizer = torch_quantizer(quant_mode, model, rand_in, output_dir=quantize_output_dir)
@@ -144,14 +144,14 @@ def main():
 	
     # Construct the argument parser and parse the arguments
     ap = argparse.ArgumentParser()
-    ap.add_argument('--model',  type=str, default='./MyModel_v2.pt',    help='Path to float model')
+    ap.add_argument('--model',  type=str, default='./ClassifiedModel_v3.pt',    help='Path to float model')
     ap.add_argument('--quantized_model_name',  type=str, default='quantized_model_v3.pt',    help='Quantized model name')
     ap.add_argument('--quant_mode', type=str, default='calib', choices=['calib', 'test'], help='Quantization mode (calib or test). Default is calib')
     ap.add_argument('--batchsize',  type=int, default=16, help='Testing batch size - must be an integer. Default is 16')
     ap.add_argument('--quantize',  type=bool, default=True, help='Whether to do quantization, default is True')
     ap.add_argument('--quantize_output_dir',  type=str, default='./quantized/', help='Directory to save the quantized model')
     ap.add_argument('--finetune',  type=bool, default=True, help='Whether to do the finetune befroe quantization')
-    ap.add_argument('--deploy',  type=bool, default=False, help='Whether to export xmodel for deployment')
+    ap.add_argument('--deploy',  type=bool, default=True, help='Whether to export xmodel for deployment')
     ap.add_argument('--train_dataset_path',  type=str, default='./dataset_v2/train', help='Give the train dataset path')
     # use test data as validation here
     ap.add_argument('--val_dataset_path',  type=str, default='./dataset_v2/test')

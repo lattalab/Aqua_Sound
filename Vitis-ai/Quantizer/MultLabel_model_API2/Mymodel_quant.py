@@ -12,7 +12,7 @@ from MultLabel_model import CNN_Model
 from custom_dataset import MultiLabelImageDataset, dict_for_label
 from torch.utils.data import DataLoader
 
-LR = 0.02
+LR = 0.0015
 #batch_size_train = 20
 #batch_size_valid = 20
 
