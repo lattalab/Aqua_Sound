@@ -7,5 +7,9 @@
 /MultLabel_model/dataset/*
 /MultLabel_model/dataset_v2/*
 /MultLabel_model/dataset_v3/*
+<<<<<<< HEAD
 /MultLabel_model/合併聲音/*
 /feature_engineering/MixedupAudioPlaying.ipynb
+=======
+/MultLabel_model/合併聲音/*
+>>>>>>> 9a90a5be71c54cffa5fcfa23d1482b064b8d48ef
