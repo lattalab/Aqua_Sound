@@ -1,0 +1,20 @@
+(1, 480, 256, 3): CNN_Model::input_0
+(1, 476, 252, 8): CNN_Model::CNN_Model/Sequential[layer1]/ReLU[1]/input.3
+(1, 476, 252, 8): CNN_Model::CNN_Model/Sequential[layer1]/BatchNorm2d[2]/59
+(1, 238, 126, 8): CNN_Model::CNN_Model/Sequential[layer1]/MaxPool2d[3]/input.4
+(1, 236, 124, 14): CNN_Model::CNN_Model/Sequential[layer2]/ReLU[1]/input.6
+(1, 236, 124, 14): CNN_Model::CNN_Model/Sequential[layer2]/BatchNorm2d[2]/81
+(1, 118, 62, 14): CNN_Model::CNN_Model/Sequential[layer2]/MaxPool2d[3]/input.7
+(1, 118, 62, 44): CNN_Model::CNN_Model/Sequential[layer3]/ReLU[1]/input.9
+(1, 116, 60, 44): CNN_Model::CNN_Model/Sequential[layer3]/ReLU[3]/input.11
+(1, 116, 60, 44): CNN_Model::CNN_Model/Sequential[layer3]/BatchNorm2d[4]/114
+(1, 58, 30, 44): CNN_Model::CNN_Model/Sequential[layer3]/MaxPool2d[5]/input.12
+(1, 58, 30, 20): CNN_Model::CNN_Model/Sequential[layer4]/ReLU[1]/input.14
+(1, 56, 28, 20): CNN_Model::CNN_Model/Sequential[layer4]/ReLU[3]/input.16
+(1, 56, 28, 20): CNN_Model::CNN_Model/Sequential[layer4]/BatchNorm2d[4]/147
+(1, 28, 14, 20): CNN_Model::CNN_Model/Sequential[layer4]/MaxPool2d[5]/input.17
+(1, 28, 14, 8): CNN_Model::CNN_Model/Sequential[layer5]/ReLU[1]/input.19
+(1, 24, 10, 8): CNN_Model::CNN_Model/Sequential[layer5]/ReLU[3]/input.21
+(1, 24, 10, 8): CNN_Model::CNN_Model/Sequential[layer5]/BatchNorm2d[4]/180
+(1, 12, 5, 8): CNN_Model::CNN_Model/Sequential[layer5]/MaxPool2d[5]/186
+(1, 4): CNN_Model::CNN_Model/Linear[fc1]/195

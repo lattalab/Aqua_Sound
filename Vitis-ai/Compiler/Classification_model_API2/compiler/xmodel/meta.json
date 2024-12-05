@@ -1,0 +1,8 @@
+{
+    "lib": "libvart-dpu-runner.so",
+    "filename": "Classified_api2.xmodel",
+    "kernel": [
+        "subgraph_CNN_Model__CNN_Model_Linear_fc1__195(TransferMatMulToConv2d)"
+    ],
+    "target": "DPUCZDX8G_ISA0_B3136_MAX_BG2"
+}
