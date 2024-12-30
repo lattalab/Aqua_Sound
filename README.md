@@ -11,3 +11,5 @@ Check manual for more detail: https://docs.amd.com/r/en-US/ug1414-vitis-ai/Vitis
 * 表現上還是以分類模型較優。 (2024/10/14)  
 * 更動Mult-label使其表現優良。 (2024/10/15)  
 
+Update: add tensorflow version of our model.  
+You can other source code about this project, please check that [ocean-sound-project-ubuntu proposed by AnnTaiwan](https://github.com/AnnTaiwan/ocean-sound-project-ubuntu/tree/main)
