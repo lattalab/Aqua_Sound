@@ -10,8 +10,6 @@
 /MultLabel_model/dataset_v4/*
 /MultLabel_model/dataset_v5/*
 /MultLabel_model/dataset_v6/*
-<<<<<<< HEAD
 /MultLabel_model/合併聲音/*
-=======
-/MultLabel_model/合併聲音/*
->>>>>>> 9a90a5be71c54cffa5fcfa23d1482b064b8d48ef
+/tf_model_no_batchnorm/dataset_v6/*
+/tf_model_no_batchnorm_v3/dataset_v7/*
