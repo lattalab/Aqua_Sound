@@ -13,3 +13,9 @@ Check manual for more detail: https://docs.amd.com/r/en-US/ug1414-vitis-ai/Vitis
 
 Update: add tensorflow version of our model.  
 You can other source code about this project, please check that [ocean-sound-project-ubuntu proposed by AnnTaiwan](https://github.com/AnnTaiwan/ocean-sound-project-ubuntu/tree/main)
+
+📁 gradio  
+A simple GUI implemented by `Gradio`.  
+A user can upload the audio and push `sumbit` buttom, the user will get the predicted result from the model with text and image explanation.  
+Note: it is just a simple test, currently not working for the final demo version.
+![alt text](image.png)
